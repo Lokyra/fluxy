@@ -6,9 +6,9 @@ services:
     networks: 
       - elt_network
     environment:
-      - POSTGRES_DB: source_db
-      - POSTGRES_USER: postgres
-      - POSTGRES_USER: secret 
+      - POSTGRES_DB=source_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=secret
     volumes:
       - ./source_db_init/init.sql:/docker-entrypoint-initdb.d/init.sql
 
@@ -19,13 +19,13 @@ services:
     networks: 
       - elt_network
     environment:
-      - POSTGRES_DB: destination_db
-      - POSTGRES_USER: postgres
-      - POSTGRES_USER: secret 
+      - POSTGRES_DB=destination_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=secret
 
   elt_script:
     build:
-      context: ./elt_script
+      context: ./elt
       dockerfile: Dockerfile
     command: ["python","elt_script.py"]
     networks: 
