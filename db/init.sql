@@ -12,7 +12,7 @@ INSERT INTO users (first_name, last_name, email, date_of_birth) VALUES
 ('Alice', 'Johnson', 'alice.johnson@example.com', '1985-10-20'),
 ('Bob', 'Williams', 'bob.williams@example.com', '1998-07-30'),
 ('Emily', 'Clark', 'emily.clark@example.com', '1987-02-14'),
-('Michael', 'Robinson', 'michael.robinson@example.com', '1995-06-05'),
+('Michael', 'Robinson', 'michael.robinson@exmple.com', '1995-06-05'),
 ('Sarah', 'Lewis', 'sarah.lewis@example.com', '1989-03-25'),
 ('David', 'Walker', 'david.walker@example.com', '1992-11-12'),
 ('Sophia', 'Hall', 'sophia.hall@example.com', '1996-08-08'),
